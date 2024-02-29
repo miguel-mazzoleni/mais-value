@@ -1,0 +1,1220 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif; 
+}
+
+header {
+    width: 80%;
+    height: 77px;
+    background-color: #ffffff;
+    margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 60px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; 
+}
+
+.logo img {
+    max-height: 50%;
+    max-width: 50%;
+    padding: 35px;
+}
+
+.button {
+    margin-right: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 60px;
+    background: linear-gradient(to right, #08A300, #196015);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+    background: white;
+    color: #196015;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #196015;
+}
+
+
+@media (max-width: 812px) {
+    header {
+        width: 80%; /* Ajuste a largura conforme necessário */
+        height: 40px; /* Altura ajustável para acomodar o conteúdo */
+        padding: 12px; /* Adicione algum preenchimento interno */
+        margin: 20px auto; /* Ajuste as margens conforme necessário */
+        border-radius: 20px; /* Reduza o raio da borda para uma aparência mais sutil */
+        position: fixed;
+        transform: translateX(-50%);
+        z-index: 1000; 
+    }
+
+    .logo img {
+        max-height: 50px; /* Reduza o tamanho do logotipo para dispositivos menores */
+        max-width: 60%; /* Ajuste a largura conforme necessário */
+        padding: 0; /* Remova o preenchimento interno para economizar espaço */
+    }
+
+    .button {
+        margin-right: 10px; /* Reduza a margem entre os botões */
+    }
+}
+
+.content h1 {
+    font-size: 55px;
+    color: #196015;
+    margin-top: 300px;
+    margin-left: 150px;
+}
+.content h3 {
+    font-size: 55px;
+    color: #196015;
+    margin-top: -50px;
+    margin-left: 150px;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #363636;
+    text-align: left;
+    font-family: 'Lato';
+    margin-left: 150px;
+    margin-top: -50px;
+}
+
+
+.content p {
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.2; 
+    font-size: 16px; 
+    color: #333; 
+}
+
+.contact-button2 {
+    display: inline-block;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 60px;
+    background: linear-gradient(to right, #08A300, #196015);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.contact-button2:hover {
+    background: white;
+    color: #196015;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #196015;
+}
+
+.content {
+    margin-top: 120px; 
+    text-align: left; 
+    position: relative; 
+}
+
+.right-corner-img {
+    position: absolute; 
+    bottom: -145px; 
+    left: 559px;
+    right: 0px; 
+    width: 801px; 
+    height: auto; 
+    z-index: -1;
+    animation: slideIn 1s ease forwards;
+}
+@media only screen and (max-width: 768px) {
+    .content {
+        margin-top: 400px; /* Ajuste de margem para telas menores */
+        text-align: center; /* Centraliza o conteúdo em telas menores */
+    }
+
+    .content h1 {
+        font-size: 35px; /* Reduzido ainda mais para telas menores */
+        margin-top: 435px; /* Ajuste de margem para telas menores */
+        margin-left: -50px; /* Removido para centralizar em telas menores */
+        margin-bottom: -38px;
+    }
+
+    .content h3 {
+        font-size: 28px; /* Reduzido ainda mais para telas menores */
+        margin-top: 70px; /* Ajustado para melhor espaçamento */
+        margin-left: 0; /* Removido para centralizar em telas menores */
+    }
+
+    .content h2 {
+        font-size: 16px; /* Reduzido ainda mais para telas menores */
+        margin-top: 0px; /* Ajustado para melhor espaçamento */
+        margin-left: 10px; /* Removido para centralizar em telas menores */
+    }
+
+    .content p {
+        font-size: 12px; /* Reduzido ainda mais para telas menores */
+    }
+
+    .contact-button2 {
+        padding: 16px 40px; /* Reduzido ainda mais para telas menores */
+        border-radius: 20px; /* Reduzido ainda mais para telas menores */
+        margin-top: 20px; /* Ajuste de margem para telas menores */
+        margin-left: 10px; /* Removido para centralizar em telas menores */
+        
+    }
+
+    .right-corner-img {
+        margin-top: 0px;
+        margin-bottom: 450px;
+        max-width: 500px;
+        margin-left: -650px;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.services-box {
+    position: absolute;
+    bottom: -450px;
+    left: 0;
+    background: linear-gradient(to right, #08A300, #196015);
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.green-square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.text {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.text p:first-child {
+    font-size: 17px;
+    margin-top: -2px;
+    margin-left: -30px;
+    margin-right: 140px;
+    color: #A6EFA2;
+}
+
+.text p:last-child {
+    font-size: 40px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: -10px;
+    color:#A6EFA2;
+    font-weight: bold;
+}
+.services-box::after {
+    content: ''; 
+    position: absolute;
+    top:48px;
+    left: -30px;
+    width: calc(100% + -340px); 
+    height: 1px; 
+    background-color: #A6EFA2; 
+}
+@media only screen and (max-width: 768px) {
+    .services-box {
+        width: 95%; /* Ajusta a largura para ocupar 90% da largura da tela */
+        height: auto; /* Permite a altura ajustável conforme o conteúdo */
+        bottom: -180px; /* Ajuste para posição na tela */
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .green-square {
+        width: 200px; /* Reduz o tamanho do quadrado */
+        height: 200px; /* Reduz o tamanho do quadrado */
+    }
+
+    .text p:first-child {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+        margin-left: -220px; /* Remove a margem esquerda */
+        margin-right: 0; /* Remove a margem direita */
+    }
+
+    .text p:last-child {
+        font-size: 30px; /* Reduz o tamanho da fonte */
+        margin-top: 5px; /* Ajusta a margem superior */
+        margin-left: -50px; /* Remove a margem esquerda */
+        text-align: left; /* Centraliza o texto */
+    }
+
+    .services-box::after {
+        top: 40px; /* Ajuste para a posição do separador */
+        width: calc(100% + -300px); /* Ajusta a largura do separador */
+    }
+}
+
+
+.about-box {
+    position: absolute;
+    bottom: -750px;
+    left: 70px;
+    background: #F1FFF0; 
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.about-box:hover {
+    background: linear-gradient(#A6EFA2,#6ab166); /* Gradiente linear hover */
+}
+
+.about-box:hover .text-about p:first-child,
+.about-box:hover .text-about p:last-child,
+.about-box:hover .corner-badge {
+    color: #fff; /* Alterando a cor do texto para branco quando hover é acionado */
+}
+
+.about-square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.text-about {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.text-about p:first-child {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 140px;
+    color: #196015;
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-about p:last-child {
+    font-size: 13px;
+    text-align: left;
+    margin-left: 7px;
+    padding: 10px; 
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; 
+    color: #196015;
+}
+.corner-badge {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    color: #000000; 
+    padding: 5px 10px; 
+    border-radius: 50%;
+    font-size:40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-box {
+        position: relative; /* Altera para posição relativa para garantir que o conteúdo permaneça dentro do fluxo */
+        width: 60%; /* Ajusta a largura para ocupar 90% da largura da tela */
+        height: auto; /* Permite a altura ajustável conforme o conteúdo */
+        margin: 20px auto; /* Centraliza o elemento */
+        left: -50px; /* Remove o posicionamento absoluto */
+        bottom: -200px; /* Remove o posicionamento absoluto */
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .about-square {
+        width: 200px; /* Reduz o tamanho do quadrado */
+        height: 300px; /* Reduz o tamanho do quadrado */
+        
+    }
+
+    .text-about p:first-child {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+        margin-top: 100px; /* Ajusta a margem superior */
+        margin-left: 20px; /* Ajusta a margem esquerda */
+        margin-right: 20px; /* Ajusta a margem direita */
+    }
+
+    .text-about p:last-child {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        margin-top: 10px; /* Ajusta a margem superior */
+        position: relative; /* Altera para posição relativa para garantir posicionamento correto */
+        bottom: 0; /* Remove o posicionamento absoluto */
+        left: 0; /* Remove o posicionamento absoluto */
+        padding: 5px; /* Reduz o espaçamento interno */
+    }
+
+    .corner-badge {
+        font-size: 30px; /* Reduz o tamanho da fonte */
+        top: 10px; /* Ajusta a posição do canto superior */
+        right: 10px; /* Ajusta a posição do canto direito */
+        padding: 3px 6px; /* Reduz o padding */
+    }
+}
+
+.abouttwo-box {
+    position: absolute;
+    bottom: -750px;
+    left: 380px;
+    background: #F1FFF0; 
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.abouttwo-box:hover {
+    background: linear-gradient(#A6EFA2,#6ab166); 
+}
+
+.abouttwo-box:hover .text-abouttwo p:first-child,
+.abouttwo-box:hover .text-abouttwo p:last-child,
+.abouttwo-box:hover .corner-badge-two {
+    color: #fff; 
+}
+.abouttwo-square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.text-aboutwo {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.text-abouttwo p:first-child {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: -60px;
+    margin-right: 140px;
+    margin-right: -10px;
+    color: #196015;
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-abouttwo p:last-child {
+    font-size: 13px;
+    text-align: left;
+    margin-left: 7px;
+    padding: 10px; 
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; 
+    color: #196015;
+}
+.corner-badge-two {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    color: #000000; 
+    padding: 5px 10px; 
+    border-radius: 50%;
+    font-size:40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .abouttwo-box {
+        position: relative; /* Altera para posição relativa para garantir que o conteúdo permaneça dentro do fluxo */
+        width: 60%; /* Ajusta a largura para ocupar 90% da largura da tela */
+        height: auto; /* Permite a altura ajustável conforme o conteúdo */
+        margin: 20px auto; /* Centraliza o elemento */
+        left: 50px; /* Remove o posicionamento absoluto */
+        bottom: -200px; /* Remove o posicionamento absoluto */
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .abouttwo-square {
+        width: 200px; /* Reduz o tamanho do quadrado */
+        height: 300px; /* Reduz o tamanho do quadrado */
+        
+    }
+
+    .text-abouttwo p:first-child {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+        margin-top: 100px; /* Ajusta a margem superior */
+        margin-left: 20px; /* Ajusta a margem esquerda */
+        margin-right: 20px; /* Ajusta a margem direita */
+    }
+
+    .text-abouttwo p:last-child {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        margin-top: 10px; /* Ajusta a margem superior */
+        position: relative; /* Altera para posição relativa para garantir posicionamento correto */
+        bottom: 0; /* Remove o posicionamento absoluto */
+        left: 0; /* Remove o posicionamento absoluto */
+        padding: 5px; /* Reduz o espaçamento interno */
+    }
+
+    .corner-badge-two {
+        font-size: 30px; /* Reduz o tamanho da fonte */
+        top: 10px; /* Ajusta a posição do canto superior */
+        right: 10px; /* Ajusta a posição do canto direito */
+        padding: 3px 6px; /* Reduz o padding */
+    }
+}
+
+.aboutthree-box {
+    position: absolute;
+    bottom: -750px;
+    left: 690px;
+    background: #F1FFF0; 
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.aboutthree-box:hover {
+    background: linear-gradient(#A6EFA2,#6ab166); 
+}
+
+.aboutthree-box:hover .text-aboutthree p:first-child,
+.aboutthree-box:hover .text-aboutthree p:last-child,
+.aboutthree-box:hover .corner-badge-three {
+    color: #fff; 
+}
+.aboutthree-square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.text-aboutthree {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.text-aboutthree p:first-child {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 140px;
+    color: #196015;
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-aboutthree p:last-child {
+    font-size: 13px;
+    text-align: left;
+    margin-left: 7px;
+    padding: 10px; 
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; 
+    color: #196015;
+}
+.corner-badge-three {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    color: #000000; 
+    padding: 5px 10px; 
+    border-radius: 50%;
+    font-size:40px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .aboutthree-box {
+        position: relative; /* Altera para posição relativa para garantir que o conteúdo permaneça dentro do fluxo */
+        width: 60%; /* Ajusta a largura para ocupar 90% da largura da tela */
+        height: auto; /* Permite a altura ajustável conforme o conteúdo */
+        margin: 20px auto; /* Centraliza o elemento */
+        left: -50px; /* Remove o posicionamento absoluto */
+        bottom: -200px; /* Remove o posicionamento absoluto */
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .aboutthree-square {
+        width: 200px; /* Reduz o tamanho do quadrado */
+        height: 300px; /* Reduz o tamanho do quadrado */
+        
+    }
+
+    .text-aboutthree p:first-child {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+        margin-top: 100px; /* Ajusta a margem superior */
+        margin-left: 20px; /* Ajusta a margem esquerda */
+        margin-right: 20px; /* Ajusta a margem direita */
+    }
+
+    .text-aboutthree p:last-child {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        margin-top: 10px; /* Ajusta a margem superior */
+        position: relative; /* Altera para posição relativa para garantir posicionamento correto */
+        bottom: 0; /* Remove o posicionamento absoluto */
+        left: 0; /* Remove o posicionamento absoluto */
+        padding: 5px; /* Reduz o espaçamento interno */
+    }
+
+    .corner-badge-three {
+        font-size: 30px; /* Reduz o tamanho da fonte */
+        top: 10px; /* Ajusta a posição do canto superior */
+        right: 10px; /* Ajusta a posição do canto direito */
+        padding: 3px 6px; /* Reduz o padding */
+    }
+}
+
+
+.aboutfour-box {
+    position: absolute;
+    bottom: -750px;
+    left: 1000px;
+    background: #F1FFF0; 
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.aboutfour-box:hover {
+    background: linear-gradient(#A6EFA2,#6ab166); 
+}
+
+.aboutfour-box:hover .text-aboutfour p:first-child,
+.aboutfour-box:hover .text-aboutfour p:last-child,
+.aboutfour-box:hover .corner-badge-four {
+    color: #fff; 
+}
+.aboutfour-square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.text-aboutfour {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.text-aboutfour p:first-child {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 140px;
+    color: #196015;
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-aboutfour p:last-child {
+    font-size: 13px;
+    text-align: left;
+    margin-left: 7px;
+    padding: 10px; 
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; 
+    color: #196015;
+}
+.corner-badge-four {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    color: #000000; 
+    padding: 5px 10px; 
+    border-radius: 50%;
+    font-size:40px;
+}
+
+.good-box {
+    position: absolute;
+    bottom: -1100px;
+    left: 0;
+    background: white;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.white-square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.good-text {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.good-text p:first-child {
+    font-size: 17px;
+    margin-left: -150px;
+    color: #196015;
+}
+
+.good-text p:last-child {
+    font-size: 50px;
+    margin-top: -10px;
+    color: #196015;
+    font-weight: bold;
+    line-height: 1;
+    white-space: pre-line; 
+    text-align: left;
+    margin-right: -1000px;
+    margin-left: -115px;
+}
+
+.good-box::after {
+    content: ''; 
+    position: absolute;
+    top: 55px;
+    left: -30px;
+    width: calc(100% + -345px); 
+    height: 1px; 
+    background-color: #196015; 
+}
+
+@media only screen and (max-width: 768px) {
+    .good-box {
+        position: relative; /* Altera para posição relativa para garantir que o conteúdo permaneça dentro do fluxo */
+        width: 90%; /* Ajusta a largura para ocupar 90% da largura da tela */
+        height: auto; /* Permite a altura ajustável conforme o conteúdo */
+        margin: 20px auto; /* Centraliza o elemento */
+        border-radius: 10px; /* Reduz o raio do bordo */
+        bottom: auto; /* Remove o posicionamento absoluto */
+        margin-top: 280px;
+    }
+
+    .white-square {
+        width: 100px; /* Reduz o tamanho do quadrado */
+        height: 100px; /* Reduz o tamanho do quadrado */
+    }
+
+    .good-text p:first-child {
+        font-size: 18px; /* Reduz o tamanho da fonte */
+        margin-left: -250px; /* Remove a margem esquerda */
+    }
+
+    .good-text p:last-child {
+        font-size: 30px; /* Reduz o tamanho da fonte */
+        margin-top: 5px; /* Ajusta a margem superior */
+        text-align: left; /* Centraliza o texto */
+        margin-left: -115px;
+        margin-right: -100px;
+    }
+
+    .good-box::after {
+        top: 6px; /* Ajuste para a posição do separador */
+        width: calc(100% + -310px); /* Ajusta a largura do separador */
+    }
+}
+
+
+.aproveita-box {
+    position: absolute;
+    bottom: -1400px;
+    left: 130px;
+    background: #F1FFF0; 
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.aproveita-box:hover {
+    background: linear-gradient(#A6EFA2, #6ab166); /* Gradiente linear hover */
+}
+
+.aproveita-box:hover .aproveita-text-about p:first-child,
+.aproveita-box:hover .aproveita-text-about p:last-child,
+.aproveita-box:hover .corner-badge {
+    color: #fff; /* Alterando a cor do texto para branco quando hover é acionado */
+}
+.aproveita-box:hover .imagem-aproveita-box {
+    filter: invert(100%);
+}
+
+.aproveita-square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.aproveita-text-about {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.aproveita-text-about p:first-child {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: -50px;
+    margin-bottom: -10px;
+    color: #196015;
+    font-weight: bold;
+    text-align: left;
+}
+
+.aproveita-text-about p:last-child {
+    font-size: 13px;
+    padding: 10px; 
+    color: #196015;
+    text-align: left;
+    margin-left: -60px;
+    margin-right: -15px;
+}
+.imagem-aproveita-box {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 35px; /* Ajuste conforme necessário */
+    height: 35px; /* Ajuste conforme necessário */
+}
+
+.aproveitatwo-box {
+    position: absolute;
+    bottom: -1400px;
+    left: 450px;
+    background: #F1FFF0; 
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.aproveitatwo-box:hover {
+    background: linear-gradient(#A6EFA2, #6ab166); /* Gradiente linear hover */
+}
+
+.aproveitatwo-box:hover .aproveitatwo-text-about p:first-child,
+.aproveitatwo-box:hover .aproveitatwo-text-about p:last-child,
+.aproveitatwo-box:hover .corner-badge {
+    color: #fff; /* Alterando a cor do texto para branco quando hover é acionado */
+}
+.aproveitatwo-box:hover .imagemtwo-aproveita-box {
+        filter: invert(100%);
+}
+
+.aproveitatwo-square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.aproveitatwo-text-about {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.aproveitatwo-text-about p:first-child {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: -50px;
+    margin-bottom: -10px;
+    color: #196015;
+    font-weight: bold;
+    text-align: left;
+}
+
+.aproveitatwo-text-about p:last-child {
+    font-size: 13px;
+    padding: 10px; 
+    color: #196015;
+    text-align: left;
+    margin-left: -60px;
+    margin-right: -10px;
+}
+.imagemtwo-aproveita-box {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 35px; 
+    height: 35px; 
+}
+
+
+.aproveitathree-box {
+    position: absolute;
+    bottom: -1400px;
+    left: 770px;
+    background: #F1FFF0; 
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.aproveitathree-box:hover {
+    background: linear-gradient(#A6EFA2, #6ab166); /* Gradiente linear hover */
+}
+
+.aproveitathree-box:hover .aproveitathree-text-about p:first-child,
+.aproveitathree-box:hover .aproveitathree-text-about p:last-child,
+.aproveitathree-box:hover .corner-badge {
+    color: #fff; /* Alterando a cor do texto para branco quando hover é acionado */
+}
+.aproveitathree-box:hover .imagemthree-aproveita-box {
+        filter: invert(100%);
+}
+
+.aproveitathree-square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.aproveitathree-text-about {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.aproveitathree-text-about p:first-child {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: -50px;
+    margin-bottom: -10px;
+    color: #196015;
+    font-weight: bold;
+    text-align: left;
+}
+
+.aproveitathree-text-about p:last-child {
+    font-size: 13px;
+    padding: 10px; 
+    color: #196015;
+    text-align: left;
+    margin-left: -60px;
+}
+.imagemthree-aproveita-box {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 35px; 
+    height: 35px; 
+}
+
+.aproveitafour-box {
+    position: absolute;
+    bottom: -1400px;
+    left: 1090px;
+    background: #F1FFF0; 
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.aproveitafour-box:hover {
+    background: linear-gradient(#A6EFA2, #6ab166); /* Gradiente linear hover */
+}
+
+.aproveitafour-box:hover .aproveitafour-text-about p:first-child,
+.aproveitafour-box:hover .aproveitafour-text-about p:last-child,
+.aproveitafour-box:hover .corner-badge {
+    color: #fff; /* Alterando a cor do texto para branco quando hover é acionado */
+}
+.aproveitafour-box:hover .imagemfour-aproveita-box {
+        filter: invert(100%);
+}
+
+.aproveitafour-square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.aproveitafour-text-about {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.aproveitafour-text-about p:first-child {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: -50px;
+    margin-bottom: -10px;
+    color: #196015;
+    font-weight: bold;
+    text-align: left;
+}
+
+.aproveitafour-text-about p:last-child {
+    font-size: 13px;
+    padding: 10px; 
+    color: #196015;
+    text-align: left;
+    margin-left: -60px;
+}
+.imagemfour-aproveita-box {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 35px; 
+    height: 35px; 
+}
+/* Estilos para a caixa com a imagem e os textos */
+.additional-content {
+    display: flex;
+    align-items: center;
+    margin-top: 1550px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.additional-content img {
+    max-width: 500px;
+    margin-left: 150px;
+    margin-right: 10px;
+    margin-top: -30px;
+}
+
+.additional-content .titles {
+    flex: 1;
+}
+
+.additional-content .titles h3 {
+    font-size: 18px;
+    margin-bottom: 2px;
+    margin-top: -80px;
+    color: #196015;
+    font-weight: normal;
+}
+
+.additional-content .titles h2 {
+    font-size: 50px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #196015;
+}
+
+.additional-content .titles p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin-right: 100px;
+}
+
+
+.additional-content-two {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.additional-content-two img {
+    max-width: 550px;
+    margin-left: 800px;
+    margin-top: -480px;
+
+}
+
+.additional-content-two .titles-two {
+    flex: 1;
+}
+
+.additional-content-two .titles-two h3 {
+    font-size: 18px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    color: #196015;
+    margin-left: 110px;
+    font-weight: normal;
+}
+
+.additional-content-two .titles-two h2 {
+    font-size: 50px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #196015;
+    margin-left: 110px;
+    font-weight: bold;
+}
+
+.additional-content-two .titles-two p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+    margin-right: 600px;
+    margin-left: 110px;
+}
+.additional-content-two::after {
+    content: ''; 
+    position: absolute;
+    top: 2770px;
+    left: -30px;
+    width: calc(100% + -1210px); 
+    height: 1px; 
+    background-color: #196015; 
+}
+
+footer {
+    background: linear-gradient(to right, #08A300, #196015);
+    padding: 20px;
+    text-align: center;
+
+}
+
+.contact-section {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.contact-section h3 {
+    font-size: 20px;
+    color: #ffffff;     
+    margin-left: 900px;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 1040px;
+}
+
+
+
+.footer-image {
+    width: 150px;
+    margin-left: -1100px;
+    margin-top: -200px;
+    margin-bottom: 50px;
+}
+
+.contact {
+
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.contact h3 {
+    color:#196015;
+    font-size: 50px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contact p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: left;
+    margin-left: 500px;
+
+}
+
+.contact p strong {
+    color: #000;
+}
